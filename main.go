@@ -1,11 +1,9 @@
 package main
 import "fmt"
 
-func main(){
-	strings()
-	integers()
-	boolean ()
-	floatingPoint()
+func main() {
+	circlez()
+	school()
 }
 
 func strings (){
@@ -36,3 +34,54 @@ func floatingPoint(){
 	m1 = 43.4343434343
 	fmt.Println(m1)
 }
+
+func arr(){
+	colors := []string{"blue", "red", "green", "white", "black","Grey","pink", "orange"}
+	var numerals []int = []int{1, 2, 3, 4, 5}
+	fmt.Println(numerals, colors)
+}
+
+func circlez() {	 
+   var Experts = []string{"doctor", "lawyer", "policeman", "architect"} 
+	for index, value := range Experts {
+		fmt.Println(index, value)
+	}
+}
+
+func school (){
+	type student struct{
+		name string
+		class string
+		Age  int
+		session string
+	}
+
+	var Moses student
+
+	Moses.name = "Moses"
+	Moses.class = "jss2"
+	Moses.Age = 67
+
+	
+
+	James := student{
+		name: "Imaobong",
+		class: "primary2",
+		Age: 13,
+		session: "second term",
+	}
+
+fmt.Println(Moses, James)
+}
+party := [Person{tobi, chuks}]
+people := []Person {
+	{
+		Age: 1432,
+		address: "djt"
+	},
+	{
+		Age: 1432,
+		address: "dfd"
+	}
+}
+
